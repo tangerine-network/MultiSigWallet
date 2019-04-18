@@ -6,7 +6,8 @@
     "test-dapp": "cd dapp && npm test",
     "test": "sh truffle_test_runner.sh",
     "install": "cd dapp && npm install",
-    "start": "cd dapp && npm start"
+    "start": "cd dapp && npm start",
+    "publish": "rm -rf docs && cp -r dapp/src docs"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,12 @@
     }
   },
   "dependencies": {
+    "@dexon-foundation/truffle": "^5.0.16",
     "child_process": "1.0.2",
     "ganache-cli": "6.1.8",
-    "solc": "0.5.8",
-    "truffle": "3.4.11"
+    "solc": "^0.5.11",
+    "truffle": "3.4.11",
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
