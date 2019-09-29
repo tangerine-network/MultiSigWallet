@@ -314,7 +314,7 @@
               if (e) {
                 reject();
               }
-              if (block && block.hash == "0x756c14f977abb9fee60f55684c0407190ac79eba77b2155b1d654a59b27002ca") {
+              if (block && block.hash == "0xcbfc86c8cf68d0207a1dff32b7397d9ecfef91371af0725509d78d9d578b405d") {
                 data.chain = "mainnet";
                 data.etherscan = "https://tangerine.garden";
                 data.walletFactoryAddress = txDefault.walletFactoryAddresses["mainnet"].address;

@@ -21,9 +21,16 @@ module.exports = {
     },
     tangerineTestnet: {
       network_id: 374,
-      gasPrice: 24e9,
+      gasPrice: 1e9,
       provider: function() {
         return new HDWalletProvider(mnemonic, "https://testnet-rpc.tangerine-network.io");
+      },
+    },
+    tangerineMainnet: {
+      network_id: 411,
+      gasPrice: 1e9,
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "https://mainnet-rpc.tangerine-network.io");
       },
     },
   },
